@@ -1,10 +1,10 @@
-package com.ngockhuong.qrcode
+package com.ngockhuong.codes
 
 import org.junit.jupiter.api.Test
 import org.springframework.boot.test.context.SpringBootTest
 
 @SpringBootTest
-class QrcodeApplicationTests {
+class CodesApplicationTests {
 
 	@Test
 	fun contextLoads() {
