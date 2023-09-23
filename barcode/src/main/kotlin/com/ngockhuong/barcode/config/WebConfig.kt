@@ -1,4 +1,4 @@
-package com.ngockhuong.codes.config
+package com.ngockhuong.barcode.config
 
 import org.springframework.context.annotation.Bean
 import org.springframework.context.annotation.Configuration

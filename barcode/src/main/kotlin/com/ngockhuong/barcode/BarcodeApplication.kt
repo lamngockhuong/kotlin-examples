@@ -1,11 +1,11 @@
-package com.ngockhuong.codes
+package com.ngockhuong.barcode
 
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
 
 @SpringBootApplication
-class CodesApplication
+class BarcodeApplication
 
 fun main(args: Array<String>) {
-	runApplication<CodesApplication>(*args)
+	runApplication<BarcodeApplication>(*args)
 }

@@ -1,4 +1,4 @@
-package com.ngockhuong.codes.qrcode
+package com.ngockhuong.barcode.qrcode
 
 import com.google.zxing.BarcodeFormat
 import com.google.zxing.client.j2se.MatrixToImageWriter
