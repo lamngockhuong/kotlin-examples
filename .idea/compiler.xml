@@ -2,6 +2,8 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <bytecodeTargetLevel>
+      <module name="codes.main" target="17" />
+      <module name="codes.test" target="17" />
       <module name="qrcode.main" target="17" />
       <module name="qrcode.test" target="17" />
     </bytecodeTargetLevel>
