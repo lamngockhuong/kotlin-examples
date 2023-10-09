@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="CompilerConfiguration">
-    <bytecodeTargetLevel>
+    <bytecodeTargetLevel target="17">
       <module name="codes.main" target="17" />
       <module name="codes.test" target="17" />
+      <module name="qrcode" target="17" />
       <module name="qrcode.main" target="17" />
       <module name="qrcode.test" target="17" />
     </bytecodeTargetLevel>

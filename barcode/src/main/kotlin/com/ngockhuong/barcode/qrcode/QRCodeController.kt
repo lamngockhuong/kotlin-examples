@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.RequestMapping
 import org.springframework.web.bind.annotation.RequestParam
 import org.springframework.web.bind.annotation.RestController
 import java.awt.image.BufferedImage
+import java.nio.charset.Charset
 
 @RestController
 @RequestMapping("qrcode")
@@ -38,6 +39,10 @@ class QRCodeController {
         return ResponseEntity.ok().body(qrImage)
     }
 
+    /**
+     * Download QR code image by png
+     * Support file name JP: Charset.forName("UTF-8")
+     */
     @GetMapping(value = ["/download"], produces = [MediaType.IMAGE_PNG_VALUE])
     fun download(
         @RequestParam("text", required = true) text: String,
@@ -48,7 +53,8 @@ class QRCodeController {
 
         val headers = HttpHeaders()
         headers.contentDisposition =
-            ContentDisposition.builder("attachment").filename("file-${width}x${height}.png").build()
+            ContentDisposition.builder("attachment").filename("file-${width}x${height}.png", Charset.forName("UTF-8"))
+                .build()
         headers.contentDisposition
         headers.cacheControl = "no-cache,no-store,must-revalidate"
         headers.pragma = "no-cache"
@@ -57,6 +63,10 @@ class QRCodeController {
         return ResponseEntity.ok().headers(headers).body(qrImage)
     }
 
+    /**
+     * Download QR code image
+     * Support file name JP: Charset.forName("UTF-8")
+     */
     @GetMapping(value = ["/download2"], produces = [MediaType.APPLICATION_OCTET_STREAM_VALUE])
     fun download2(
         @RequestParam("text", required = true) text: String,
@@ -67,7 +77,8 @@ class QRCodeController {
 
         val headers = HttpHeaders()
         headers.contentDisposition =
-            ContentDisposition.builder("attachment").filename("file-${width}x${height}.png").build()
+            ContentDisposition.builder("attachment").filename("file-${width}x${height}.png", Charset.forName("UTF-8"))
+                .build()
         headers.contentDisposition
         headers.cacheControl = "no-cache,no-store,must-revalidate"
         headers.pragma = "no-cache"
