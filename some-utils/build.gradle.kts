@@ -20,7 +20,7 @@ repositories {
 
 dependencies {
 	implementation("org.springframework.boot:spring-boot-starter-web:3.1.5")
-	implementation("com.fasterxml.jackson.module:jackson-module-kotlin:2.14.2")
+	implementation("com.fasterxml.jackson.module:jackson-module-kotlin:2.16.0")
 	implementation("org.jetbrains.kotlin:kotlin-reflect")
 	implementation("com.google.zxing:core:3.5.2")
 	implementation("com.google.zxing:javase:3.5.2")
