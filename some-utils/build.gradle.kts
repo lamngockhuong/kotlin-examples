@@ -22,7 +22,7 @@ dependencies {
 	implementation("org.springframework.boot:spring-boot-starter-web:3.2.4")
 	implementation("com.fasterxml.jackson.module:jackson-module-kotlin:2.16.0")
 	implementation("org.jetbrains.kotlin:kotlin-reflect")
-	implementation("com.google.zxing:core:3.5.2")
+	implementation("com.google.zxing:core:3.5.3")
 	implementation("com.google.zxing:javase:3.5.2")
 	testImplementation("org.springframework.boot:spring-boot-starter-test:3.2.4")
 }
