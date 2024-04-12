@@ -1,7 +1,7 @@
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 plugins {
-	id("org.springframework.boot") version "3.2.0"
+	id("org.springframework.boot") version "3.2.4"
 	id("io.spring.dependency-management") version "1.1.4"
 	kotlin("jvm") version "1.9.21"
 	kotlin("plugin.spring") version "1.9.21"
@@ -19,12 +19,12 @@ repositories {
 }
 
 dependencies {
-	implementation("org.springframework.boot:spring-boot-starter-web:3.2.0")
+	implementation("org.springframework.boot:spring-boot-starter-web:3.2.4")
 	implementation("com.fasterxml.jackson.module:jackson-module-kotlin:2.16.0")
 	implementation("org.jetbrains.kotlin:kotlin-reflect")
 	implementation("com.google.zxing:core:3.5.2")
 	implementation("com.google.zxing:javase:3.5.2")
-	testImplementation("org.springframework.boot:spring-boot-starter-test:3.2.0")
+	testImplementation("org.springframework.boot:spring-boot-starter-test:3.2.4")
 }
 
 tasks.withType<KotlinCompile> {
